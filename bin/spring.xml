@@ -14,7 +14,7 @@
 	<property name="name" value="RightAngle"/>
 	</bean>
 	<bean name="circle" class="com.spring.aop.model.Circle">
-	<!-- <property name="name" value="RoundishCircle"/> -->
+	 <property name="name" value="RoundishCircle"/> 
 	</bean>
 	<context:component-scan base-package="com.spring.aop.model.Aspects"></context:component-scan>
 	<bean name="shapeService" class="com.spring.aop.service.ShapeService" autowire="byName">

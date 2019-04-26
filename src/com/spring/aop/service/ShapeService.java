@@ -2,11 +2,13 @@ package com.spring.aop.service;
 
 import com.spring.aop.model.Circle;
 import com.spring.aop.model.Triangle;
+import com.spring.aop.model.Aspects.Loggable;
 
 public class ShapeService {
 	
 	private Circle circle;
 	private Triangle triangle;
+	//@Loggable
 	public Circle getCircle() {
 		return circle;
 	}

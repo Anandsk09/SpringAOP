@@ -17,10 +17,10 @@ public class LoggingAspectPart2 {
 	 System.out.println("After Advice returning... "+name+"\t return value..."+returningString); }
 	 
 	
-	 @AfterThrowing("args(name)")
-		public void allgettersthrow(String name) {
+	 @AfterThrowing(pointcut="args(name)",throwing="exception")
+		public void allgettersthrow(String name,Exception exception) {
 		 
-		 System.out.println("After allgetters in throwing...........");
+		 System.out.println("After allgetters in throwing..........."+exception);
 	 }
 	
 	  @After("args((name))") public void allgetters(String name) {
