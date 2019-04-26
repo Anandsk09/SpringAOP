@@ -12,8 +12,8 @@ public class AOPMain {
 		ApplicationContext ctx=new ClassPathXmlApplicationContext("spring.xml");
 		ShapeService shapeService=ctx.getBean("shapeService",ShapeService.class);
 		//System.out.println(shapeService.getCircle().getName());
-		shapeService.getCircle().setName("hello");
-		shapeService.getCircle().setNameReturn("helloReturn Called");
+		shapeService.getCircle().setName("circle");
+		shapeService.getCircle().setNameReturn("Returning Circle");
 	}
 
 }
